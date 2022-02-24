@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Parisienne', cursive;
+    padding: 0;
+    margin: 0;
+    user-select: none;
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+}
+body{
+    background: linear-gradient(237.2deg, rgba(76, 223, 197, 0.74) 14.31%, #C73BCA 83.58%);
+    height: 100vh;
+    position: relative;
+}
+
+/* header */
+header img{
+    margin: auto;
+    display: block;
+}
+
+main{
+    height: calc(100% - 192px);
+}
+main button{
+    font-size: 40px;
+    position: absolute;
+    width: 70px;
+    border: none;
+    top: 40%;
+    cursor: pointer;
+}
+main button#si{
+    left: calc(50% - (70px/2) - 70px);
+}
+main button#no{
+    left: calc(50% - (70px/2) + 70px);
+    transition-property: left, top;
+    transition-duration: 40ms;
+    transition-timing-function: linear;
+}
+/* main */
+main img{
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - (273px / 2 ));
+    z-index: -1;
+}
